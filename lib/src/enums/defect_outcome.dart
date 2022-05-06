@@ -1,0 +1,1 @@
+enum DefectOutcome { deferred, aog }

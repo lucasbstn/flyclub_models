@@ -1,0 +1,1 @@
+enum ScheduleEventType { maintenance, flight }
