@@ -7,7 +7,6 @@ environment:
   sdk: ">=2.16.2 <3.0.0"
 
 dependencies:
-  appwrite: ^4.0.2
   freezed_annotation: ^1.1.0
   json_serializable: ^6.1.5
 
