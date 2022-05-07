@@ -32,8 +32,7 @@ class _$AircraftTearOff {
   const _$AircraftTearOff();
 
   _TwinEngine twinEngine(
-      {@JsonKey(fromJson: intToColor, toJson: colorToInt)
-          required Color color,
+      {required int color,
       @JsonKey(name: '\$id')
           String? id,
       String? name,
@@ -84,8 +83,7 @@ class _$AircraftTearOff {
   }
 
   _SingleEngine singleEngine(
-      {@JsonKey(fromJson: intToColor, toJson: colorToInt)
-          required Color color,
+      {required int color,
       @JsonKey(name: '\$id')
           String? id,
       String? name,
@@ -145,8 +143,7 @@ const $Aircraft = _$AircraftTearOff();
 
 /// @nodoc
 mixin _$Aircraft {
-  @JsonKey(fromJson: intToColor, toJson: colorToInt)
-  Color get color => throw _privateConstructorUsedError;
+  int get color => throw _privateConstructorUsedError;
   @JsonKey(name: '\$id')
   String? get id => throw _privateConstructorUsedError;
   String? get name => throw _privateConstructorUsedError;
@@ -184,8 +181,7 @@ mixin _$Aircraft {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -215,8 +211,7 @@ mixin _$Aircraft {
                 double? fuelBurnPrHr)
         twinEngine,
     required TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -250,8 +245,7 @@ mixin _$Aircraft {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -281,8 +275,7 @@ mixin _$Aircraft {
                 double? fuelBurnPrHr)?
         twinEngine,
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -316,8 +309,7 @@ mixin _$Aircraft {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -347,8 +339,7 @@ mixin _$Aircraft {
                 double? fuelBurnPrHr)?
         twinEngine,
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -410,8 +401,7 @@ abstract class $AircraftCopyWith<$Res> {
   factory $AircraftCopyWith(Aircraft value, $Res Function(Aircraft) then) =
       _$AircraftCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(fromJson: intToColor, toJson: colorToInt)
-          Color color,
+      {int color,
       @JsonKey(name: '\$id')
           String? id,
       String? name,
@@ -474,7 +464,7 @@ class _$AircraftCopyWithImpl<$Res> implements $AircraftCopyWith<$Res> {
       color: color == freezed
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
-              as Color,
+              as int,
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -554,8 +544,7 @@ abstract class _$TwinEngineCopyWith<$Res> implements $AircraftCopyWith<$Res> {
       __$TwinEngineCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(fromJson: intToColor, toJson: colorToInt)
-          Color color,
+      {int color,
       @JsonKey(name: '\$id')
           String? id,
       String? name,
@@ -620,7 +609,7 @@ class __$TwinEngineCopyWithImpl<$Res> extends _$AircraftCopyWithImpl<$Res>
       color: color == freezed
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
-              as Color,
+              as int,
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -697,8 +686,7 @@ class __$TwinEngineCopyWithImpl<$Res> extends _$AircraftCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_TwinEngine extends _TwinEngine {
   _$_TwinEngine(
-      {@JsonKey(fromJson: intToColor, toJson: colorToInt)
-          required this.color,
+      {required this.color,
       @JsonKey(name: '\$id')
           this.id,
       this.name,
@@ -734,8 +722,7 @@ class _$_TwinEngine extends _TwinEngine {
       _$$_TwinEngineFromJson(json);
 
   @override
-  @JsonKey(fromJson: intToColor, toJson: colorToInt)
-  final Color color;
+  final int color;
   @override
   @JsonKey(name: '\$id')
   final String? id;
@@ -858,8 +845,7 @@ class _$_TwinEngine extends _TwinEngine {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -889,8 +875,7 @@ class _$_TwinEngine extends _TwinEngine {
                 double? fuelBurnPrHr)
         twinEngine,
     required TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -945,8 +930,7 @@ class _$_TwinEngine extends _TwinEngine {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -976,8 +960,7 @@ class _$_TwinEngine extends _TwinEngine {
                 double? fuelBurnPrHr)?
         twinEngine,
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -1032,8 +1015,7 @@ class _$_TwinEngine extends _TwinEngine {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -1063,8 +1045,7 @@ class _$_TwinEngine extends _TwinEngine {
                 double? fuelBurnPrHr)?
         twinEngine,
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -1158,8 +1139,7 @@ class _$_TwinEngine extends _TwinEngine {
 
 abstract class _TwinEngine extends Aircraft {
   factory _TwinEngine(
-      {@JsonKey(fromJson: intToColor, toJson: colorToInt)
-          required Color color,
+      {required int color,
       @JsonKey(name: '\$id')
           String? id,
       String? name,
@@ -1193,8 +1173,7 @@ abstract class _TwinEngine extends Aircraft {
       _$_TwinEngine.fromJson;
 
   @override
-  @JsonKey(fromJson: intToColor, toJson: colorToInt)
-  Color get color;
+  int get color;
   @override
   @JsonKey(name: '\$id')
   String? get id;
@@ -1258,8 +1237,7 @@ abstract class _$SingleEngineCopyWith<$Res> implements $AircraftCopyWith<$Res> {
       __$SingleEngineCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(fromJson: intToColor, toJson: colorToInt)
-          Color color,
+      {int color,
       @JsonKey(name: '\$id')
           String? id,
       String? name,
@@ -1324,7 +1302,7 @@ class __$SingleEngineCopyWithImpl<$Res> extends _$AircraftCopyWithImpl<$Res>
       color: color == freezed
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
-              as Color,
+              as int,
       id: id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -1401,8 +1379,7 @@ class __$SingleEngineCopyWithImpl<$Res> extends _$AircraftCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_SingleEngine extends _SingleEngine {
   _$_SingleEngine(
-      {@JsonKey(fromJson: intToColor, toJson: colorToInt)
-          required this.color,
+      {required this.color,
       @JsonKey(name: '\$id')
           this.id,
       this.name,
@@ -1438,8 +1415,7 @@ class _$_SingleEngine extends _SingleEngine {
       _$$_SingleEngineFromJson(json);
 
   @override
-  @JsonKey(fromJson: intToColor, toJson: colorToInt)
-  final Color color;
+  final int color;
   @override
   @JsonKey(name: '\$id')
   final String? id;
@@ -1562,8 +1538,7 @@ class _$_SingleEngine extends _SingleEngine {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -1593,8 +1568,7 @@ class _$_SingleEngine extends _SingleEngine {
                 double? fuelBurnPrHr)
         twinEngine,
     required TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -1649,8 +1623,7 @@ class _$_SingleEngine extends _SingleEngine {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -1680,8 +1653,7 @@ class _$_SingleEngine extends _SingleEngine {
                 double? fuelBurnPrHr)?
         twinEngine,
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -1736,8 +1708,7 @@ class _$_SingleEngine extends _SingleEngine {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -1767,8 +1738,7 @@ class _$_SingleEngine extends _SingleEngine {
                 double? fuelBurnPrHr)?
         twinEngine,
     TResult Function(
-            @JsonKey(fromJson: intToColor, toJson: colorToInt)
-                Color color,
+            int color,
             @JsonKey(name: '\$id')
                 String? id,
             String? name,
@@ -1862,8 +1832,7 @@ class _$_SingleEngine extends _SingleEngine {
 
 abstract class _SingleEngine extends Aircraft {
   factory _SingleEngine(
-      {@JsonKey(fromJson: intToColor, toJson: colorToInt)
-          required Color color,
+      {required int color,
       @JsonKey(name: '\$id')
           String? id,
       String? name,
@@ -1897,8 +1866,7 @@ abstract class _SingleEngine extends Aircraft {
       _$_SingleEngine.fromJson;
 
   @override
-  @JsonKey(fromJson: intToColor, toJson: colorToInt)
-  Color get color;
+  int get color;
   @override
   @JsonKey(name: '\$id')
   String? get id;

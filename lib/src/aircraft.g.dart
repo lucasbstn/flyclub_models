@@ -8,7 +8,7 @@ part of 'aircraft.dart';
 
 _$_TwinEngine _$$_TwinEngineFromJson(Map<String, dynamic> json) =>
     _$_TwinEngine(
-      color: intToColor(json['color'] as int?),
+      color: json['color'] as int,
       id: json[r'$id'] as String?,
       name: json['name'] as String?,
       registration: json['registration'] as String,
@@ -32,7 +32,7 @@ _$_TwinEngine _$$_TwinEngineFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$_TwinEngineToJson(_$_TwinEngine instance) =>
     <String, dynamic>{
-      'color': colorToInt(instance.color),
+      'color': instance.color,
       r'$id': instance.id,
       'name': instance.name,
       'registration': instance.registration,
@@ -55,7 +55,7 @@ Map<String, dynamic> _$$_TwinEngineToJson(_$_TwinEngine instance) =>
 
 _$_SingleEngine _$$_SingleEngineFromJson(Map<String, dynamic> json) =>
     _$_SingleEngine(
-      color: intToColor(json['color'] as int?),
+      color: json['color'] as int,
       id: json[r'$id'] as String?,
       name: json['name'] as String?,
       registration: json['registration'] as String,
@@ -79,7 +79,7 @@ _$_SingleEngine _$$_SingleEngineFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$_SingleEngineToJson(_$_SingleEngine instance) =>
     <String, dynamic>{
-      'color': colorToInt(instance.color),
+      'color': instance.color,
       r'$id': instance.id,
       'name': instance.name,
       'registration': instance.registration,

@@ -20,6 +20,6 @@ _$_Turbulence _$$_TurbulenceFromJson(Map<String, dynamic> json) =>
 Map<String, dynamic> _$$_TurbulenceToJson(_$_Turbulence instance) =>
     <String, dynamic>{
       'severity': instance.severity,
-      'ceiling': instance.ceiling?.toJson(),
-      'floor': instance.floor?.toJson(),
+      'ceiling': instance.ceiling,
+      'floor': instance.floor,
     };

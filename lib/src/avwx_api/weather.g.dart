@@ -20,7 +20,7 @@ _$_Weather _$$_WeatherFromJson(Map<String, dynamic> json) => _$_Weather(
 
 Map<String, dynamic> _$$_WeatherToJson(_$_Weather instance) =>
     <String, dynamic>{
-      'station': instance.station?.toJson(),
-      'taf': instance.taf?.toJson(),
-      'metar': instance.metar?.toJson(),
+      'station': instance.station,
+      'taf': instance.taf,
+      'metar': instance.metar,
     };

@@ -1,8 +1,5 @@
-import 'dart:ui';
-
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import 'utils/color_utils.dart';
 import 'utils/date_utils.dart';
 
 part 'aircraft.freezed.dart';
@@ -12,7 +9,7 @@ part 'aircraft.g.dart';
 class Aircraft with _$Aircraft {
   const Aircraft._();
   factory Aircraft.twinEngine({
-    @JsonKey(fromJson: intToColor, toJson: colorToInt) required Color color,
+    required int color,
     @JsonKey(name: '\$id') String? id,
     String? name,
     required String registration,
@@ -35,7 +32,7 @@ class Aircraft with _$Aircraft {
   }) = _TwinEngine;
 
   factory Aircraft.singleEngine({
-    @JsonKey(fromJson: intToColor, toJson: colorToInt) required Color color,
+    required int color,
     @JsonKey(name: '\$id') String? id,
     String? name,
     required String registration,

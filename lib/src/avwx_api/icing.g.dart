@@ -18,8 +18,8 @@ _$_Icing _$$_IcingFromJson(Map<String, dynamic> json) => _$_Icing(
     );
 
 Map<String, dynamic> _$$_IcingToJson(_$_Icing instance) => <String, dynamic>{
-      'ceiling': instance.ceiling?.toJson(),
-      'floor': instance.floor?.toJson(),
+      'ceiling': instance.ceiling,
+      'floor': instance.floor,
       'severity': instance.severity,
       'type': instance.type,
     };

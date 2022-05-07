@@ -27,14 +27,14 @@ _$_Taf _$$_TafFromJson(Map<String, dynamic> json) => _$_Taf(
     );
 
 Map<String, dynamic> _$$_TafToJson(_$_Taf instance) => <String, dynamic>{
-      'time': instance.time.toJson(),
+      'time': instance.time,
       'temps': instance.temps,
-      'start_time': instance.startTime.toJson(),
-      'end_time': instance.endTime.toJson(),
+      'start_time': instance.startTime,
+      'end_time': instance.endTime,
       'remarks': instance.remarks,
       'raw': instance.raw,
       'min_temp': instance.minTemp,
       'max_temp': instance.maxTemp,
       'alts': instance.alts,
-      'forecast': instance.forecast.map((e) => e.toJson()).toList(),
+      'forecast': instance.forecast,
     };

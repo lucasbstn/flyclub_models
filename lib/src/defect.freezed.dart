@@ -235,7 +235,7 @@ class __$DefectCopyWithImpl<$Res> extends _$DefectCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Defect extends _Defect {
+class _$_Defect implements _Defect {
   _$_Defect(
       {@JsonKey(name: '\$id')
           required this.id,
@@ -248,8 +248,7 @@ class _$_Defect extends _Defect {
       @JsonKey(name: 'pilot_name')
           this.pilotName,
       required this.nature,
-      this.outcome})
-      : super._();
+      this.outcome});
 
   factory _$_Defect.fromJson(Map<String, dynamic> json) =>
       _$$_DefectFromJson(json);
@@ -318,7 +317,7 @@ class _$_Defect extends _Defect {
   }
 }
 
-abstract class _Defect extends Defect {
+abstract class _Defect implements Defect {
   factory _Defect(
       {@JsonKey(name: '\$id')
           required String? id,
@@ -332,7 +331,6 @@ abstract class _Defect extends Defect {
           String? pilotName,
       required String nature,
       DefectOutcome? outcome}) = _$_Defect;
-  _Defect._() : super._();
 
   factory _Defect.fromJson(Map<String, dynamic> json) = _$_Defect.fromJson;
 
