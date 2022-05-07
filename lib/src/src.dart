@@ -8,7 +8,6 @@ export 'defect_rectification.dart';
 export 'discussion.dart';
 export 'document.dart';
 export 'enums/enums.dart';
-export 'filters.dart';
 export 'fuel.dart';
 export 'group.dart';
 export 'in_app_notification.dart';

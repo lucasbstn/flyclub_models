@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flyclub_models/src/utils/date_utils.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
@@ -10,7 +9,6 @@ part 'defect.g.dart';
 
 @freezed
 class Defect with _$Defect {
-  const Defect._();
   factory Defect({
     @JsonKey(name: '\$id') required String? id,
     @JsonKey(name: 'aircraft_id') required String aircraftId,
@@ -25,19 +23,4 @@ class Defect with _$Defect {
 
   factory Defect.fromJson(Map<String, dynamic> json) => _$DefectFromJson(json);
 
-  Color get color {
-    if (rectification != null) {
-      return Colors.green;
-    }
-
-    if (outcome == null) {
-      return Colors.transparent;
-    }
-
-    if (outcome == DefectOutcome.aog) {
-      return Colors.red;
-    } else {
-      return Colors.amber;
-    }
-  }
 }

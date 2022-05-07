@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import 'dart:ui';
+
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import 'utils/color_utils.dart';
