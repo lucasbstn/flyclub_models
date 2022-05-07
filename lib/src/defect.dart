@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:models/src/utils/date_utils.dart';
+import 'package:flyclub_models/src/utils/date_utils.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import 'defect_rectification.dart';

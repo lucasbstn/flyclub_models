@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:models/src/utils/date_utils.dart';
+import 'package:flyclub_models/src/utils/date_utils.dart';
 
 part 'discussion.freezed.dart';
 part 'discussion.g.dart';

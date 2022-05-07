@@ -11,7 +11,6 @@ export 'enums/enums.dart';
 export 'filters.dart';
 export 'fuel.dart';
 export 'group.dart';
-export 'group_member.dart';
 export 'in_app_notification.dart';
 export 'techlog_entry.dart';
 export 'user.dart';
